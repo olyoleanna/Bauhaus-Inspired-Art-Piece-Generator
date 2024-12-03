@@ -27,7 +27,7 @@ class GeneticAlgorithm:
                 [random.choice(available_shapes) for _ in range(grid_size ** 2)],
                 [random.choice(get_primary_colours()) for _ in range(grid_size ** 2)]
             )
-            for _ in range(10) # 10 artworks for initial population
+            for _ in range(25) # 25 artworks for initial population
         ]
 
     @staticmethod
