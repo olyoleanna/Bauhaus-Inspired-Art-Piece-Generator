@@ -17,7 +17,7 @@ class OutputManager:
 
     @staticmethod
     def draw_art(axes, fig, artwork, available_shapes, use_colors=True):
-        axes.set_axis_off()
+        axes.set_axis_off() # Remove x and y axis
         axes.clear()
         axes.set_facecolor('#e0e0e0')
 
@@ -50,7 +50,7 @@ class OutputManager:
 
                 used_colors.append(color) # Get all colours used
 
-        axes.set_axis_off()
+        axes.set_axis_off() # Remove x and y axis
         fig.canvas.draw_idle()
         return used_colors
 
